@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="1120" viewBox="0 0 520 1120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_62593" data-name="Rectangle 62593" width="520" height="1120" transform="translate(1400)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="bg_index_3" x="407" y="911.615" width="226" height="226" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#f6e54d"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_61957" data-name="Rectangle 61957" width="942.797" height="942.797" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_61959" data-name="Rectangle 61959" width="386.002" height="386" transform="translate(605.156 237.079)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="bg_index_top_r" transform="translate(-1400)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 1400, 0)" filter="url(#bg_index_3)">
+      <path id="bg_index_3-2" data-name="bg_index_3" d="M791.212,881.97a68,68,0,1,1-68-68,68,68,0,0,1,68,68" transform="translate(-203.21 142.64)" fill="#fff"/>
+    </g>
+    <g id="Group_125718" data-name="Group 125718" transform="translate(1423.48 -547.711)">
+      <g id="Group_125690" data-name="Group 125690" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+        <image id="Rectangle_61956" data-name="Rectangle 61956" width="942.797" height="942.797" xlink:href="bg_index_top_r-image.png"/>
+      </g>
+    </g>
+    <path id="Path_96003" data-name="Path 96003" d="M666.7,953.344a125.164,125.164,0,0,1-88.512-213.67L993.731,324.126a125.168,125.168,0,1,1,177.008,177.02L755.2,916.686a124.776,124.776,0,0,1-88.5,36.658" transform="translate(1020.571 -696.797)" fill="#fff"/>
+    <path id="Path_96004" data-name="Path 96004" d="M591.163,751.193a90.357,90.357,0,0,1-63.9-154.251L741.153,383.061A90.358,90.358,0,0,1,868.936,510.848L655.052,724.729a90.107,90.107,0,0,1-63.888,26.463" transform="translate(905.232 -500.977)" fill="#fee74b"/>
+    <g id="Group_125719" data-name="Group 125719" transform="translate(1084.843 19.469)" opacity="0.2">
+      <g id="Group_125696" data-name="Group 125696">
+        <g id="Group_125695" data-name="Group 125695" clip-path="url(#clip-path-3)">
+          <line id="Line_1041" data-name="Line 1041" x1="326.002" y2="326" transform="translate(635.156 267.079)" fill="none" stroke="#a0c9ec" stroke-linecap="round" stroke-miterlimit="10" stroke-width="60"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

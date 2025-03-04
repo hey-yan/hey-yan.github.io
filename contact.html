@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherry's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="img/icon_web.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script src="./js/style.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RBHNPMV0D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RBHNPMV0D');
+</script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header container header_shadow">
+            <div class="header_left">
+                <a href="./index.html" class="header_logo"></a>
+                <a href="./index.html" class="header_logo header_name"></a>
+            </div>
+
+            <div class="header_right">
+                <input type="checkbox" class="menu_input" id="menu_btn">
+                <label for="menu_btn" class="menu_icon">
+                    <span></span></label>
+                <div class="menu">
+                    <a href="index.html#project">Project</a>
+                    <!-- <a href="./graphic.html">Graphic</a> -->
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page_contact">
+
+        <!-- 一開始即執行javascript的 init() function -->
+
+        <div onload="init()">
+            <h5>CONTACT</h5>
+
+            <form enctype="text/plain" accept-charset="utf-8">
+                <!-- 寄件者姓名    -->
+                <input id="nameText" type="text" name="Name" value size="60" placeholder="姓名" required>
+                <!-- required 必填欄位 ，placeholder 預設內容-->
+
+                <!-- 寄件者email -->
+                <input id="emailText" type="email" name="Email" value size="60" placeholder="Email" required>
+
+                <!-- 寄件者電話 -->
+                <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="聯絡電話"
+                    required>
+
+                <!-- 郵件主旨 -->
+                <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨"
+                    required>
+
+                <!-- 郵件內容 -->
+                <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true"
+                    aria-invalid="false" placeholder="訊息內容" required></textarea>
+
+                <!-- 傳送按鈕 -->
+                <div>
+                    <input type="button" value="送出" onclick="submitHandler();" class="mailTo">
+                    <a id="mailTo"></a>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="">
+                <a href="index.html#project">Project</a>
+                <!-- <a href="./graphic.html">Graphic</a> -->
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <p>©Sherry Huang
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
