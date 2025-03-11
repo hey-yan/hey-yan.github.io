@@ -95,11 +95,6 @@ small {
 
 /* 小於 12px 的中文很難閱讀，讓 small 正常化 */
 /* 重置列表元素 */
-ul,
-ol {
-  list-style: none;
-}
-
 /* 重置文字格式元素 */
 a {
   text-decoration: none;
@@ -628,7 +623,7 @@ footer p {
   margin-top: 50px;
 }
 
-.about_title {
+.page_about .about_title {
   color: #25689f;
   font-size: 20px;
   display: flex;
@@ -637,7 +632,7 @@ footer p {
   margin-left: -30px;
   margin-bottom: 10px;
 }
-.about_title::before {
+.page_about .about_title::before {
   background-image: url(../img/icon_about-title.svg);
   width: 70px;
   height: 70px;
@@ -647,7 +642,7 @@ footer p {
   margin-right: -40px;
   content: "";
 }
-.about_title::after {
+.page_about .about_title::after {
   background-image: url(../img/icon_about-line.svg);
   background-repeat: no-repeat;
   width: 108px;
@@ -663,20 +658,12 @@ footer p {
   flex-direction: column;
   margin-top: 120px;
 }
-.page_about ul li:last-child {
-  margin-bottom: 0;
-}
-.page_about ul li {
-  color: #171819;
-  margin: auto;
-  margin-bottom: 30px;
-}
-.page_about ul li h5 {
-  margin-bottom: 6px;
+.page_about h5 {
+  margin: 1em 0 0.5em;
   font-weight: 500;
   position: relative;
 }
-.page_about ul li h5::before {
+.page_about h5::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -685,24 +672,25 @@ footer p {
   position: absolute;
   margin: 10px -20px;
 }
-.page_about ul li h6 {
+.page_about h6 {
   margin-bottom: 8px;
   font-weight: 500;
-}
-.page_about ul li p {
-  color: #555657;
 }
 .page_about img {
   width: 750px;
   margin: auto;
 }
-.page_about .exhibition_ul li {
-  margin-bottom: 10px;
-  display: flex;
+.page_about ul li {
+  margin-bottom: 0.3em;
+  list-style-type: disc;
+  margin-left: 1em;
+  color: #555657;
 }
-.page_about .exhibition_ul li p {
-  color: #09518b;
-  padding-left: 10px;
+.page_about ul li ul {
+  margin-top: 0.2em;
+}
+.page_about ul li ul li {
+  list-style-type: circle;
 }
 
 .about_content {

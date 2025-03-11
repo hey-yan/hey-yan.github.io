@@ -101,10 +101,10 @@ small {
 /* 小於 12px 的中文很難閱讀，讓 small 正常化 */
 
 /* 重置列表元素 */
-ul,
-ol {
-  list-style: none;
-}
+// ul,
+// ol {
+//   list-style: none;
+// }
 
 /* 重置文字格式元素 */
 a {
@@ -788,7 +788,7 @@ footer {
   }
 }
 
-.about_title {
+.page_about .about_title {
   color: #25689f;
   font-size: 20px;
   display: flex;
@@ -824,42 +824,25 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 120px;
+  h5 {
+    margin: 1em 0 0.5em;
+    font-weight: 500;
+    position: relative;
 
-  ul {
-    li:last-child {
-      margin-bottom: 0;
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #f7e85f;
+      position: absolute;
+      margin: 10px -20px;
     }
+  }
 
-    li {
-      color: #171819;
-      margin: auto;
-      margin-bottom: 30px;
-
-      h5 {
-        margin-bottom: 6px;
-        font-weight: 500;
-        position: relative;
-
-        &::before {
-          content: "";
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background-color: #f7e85f;
-          position: absolute;
-          margin: 10px -20px;
-        }
-      }
-
-      h6 {
-        margin-bottom: 8px;
-        font-weight: 500;
-      }
-
-      p {
-        color: #555657;
-      }
-    }
+  h6 {
+    margin-bottom: 8px;
+    font-weight: 500;
   }
 
   img {
@@ -867,13 +850,17 @@ footer {
     margin: auto;
   }
 
-  .exhibition_ul li {
-    margin-bottom: 10px;
-    display: flex;
+  ul li {
+    margin-bottom: 0.3em;
+    list-style-type: disc;
+    margin-left: 1em;
+    color: #555657;
 
-    p {
-      color: #09518b;
-      padding-left: 10px;
+    ul {
+      margin-top: 0.2em;
+      li {
+        list-style-type: circle;
+      }
     }
   }
 }
