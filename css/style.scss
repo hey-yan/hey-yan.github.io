@@ -787,7 +787,11 @@ footer {
     margin-top: 50px;
   }
 }
-
+@media screen and (max-width:767px) {
+  .page_project  img:first-child {
+    margin-top: 80px;
+  }
+}
 .page_about .about_title {
   color: #25689f;
   font-size: 20px;
@@ -1075,6 +1079,7 @@ footer {
   .home_bg {
     margin: 0;
   }
+
 }
 
 .container.content_1 ul li {
