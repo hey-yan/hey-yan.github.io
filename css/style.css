@@ -950,9 +950,6 @@ footer p {
 .main-container .main-title {
   align-items: center;
 }
-.main-container .main-title img {
-  width: 80%;
-}
 
 @media (max-width: 768px) {
   .main-container .main-title img {
