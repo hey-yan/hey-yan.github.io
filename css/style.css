@@ -244,6 +244,10 @@ body {
   line-height: 1.6em;
 }
 
+body.index {
+  background: url("../img/bg-left.png") left top/auto no-repeat, url("../img/bg-right.png") right top/auto no-repeat;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -538,22 +542,22 @@ header {
     padding-top: 40px;
   }
 }
-footer {
+.footer {
   background-color: #f0f1f2;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 120px;
 }
-footer a {
+.footer a {
   padding: 15px;
   color: #555657;
 }
-footer a:hover, footer a.active {
+.footer a:hover, .footer a.active {
   color: #0098cc;
   text-decoration: none;
 }
-footer p {
+.footer p {
   color: #909293;
   padding: 15px;
 }
@@ -571,23 +575,13 @@ footer p {
   bottom: 30px;
   right: 50px;
   z-index: 50;
-}
-.btn_backtotop .btn_backtotop_baby {
-  position: fixed;
-  bottom: 6px;
-  right: 8px;
-  z-index: -1;
-  opacity: 0;
-  pointer-events: none;
+  cursor: pointer;
 }
 .btn_backtotop:hover {
   background-color: #f7e85f;
 }
 .btn_backtotop:hover #back_to_top {
   fill: #fff;
-}
-.btn_backtotop:hover .btn_backtotop_baby {
-  opacity: 0.7;
 }
 
 .hide {
@@ -856,13 +850,10 @@ footer p {
     margin-bottom: 10px;
   }
 }
-.wrapper {
-  min-height: 100%;
-}
-
 .home_bg {
   padding-bottom: 200px;
   margin-top: -80px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -937,7 +928,7 @@ footer p {
 .main-container h1 {
   font-family: "Varela Round", serif;
   line-height: 1.4;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
   font-weight: 900;
 }
 .main-container h5 {
@@ -988,4 +979,15 @@ footer p {
 .scorll:hover {
   text-decoration: none;
   color: #909293;
+}
+
+.contant {
+  height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contant h5 {
+  color: #595959;
 }/*# sourceMappingURL=style.css.map */
